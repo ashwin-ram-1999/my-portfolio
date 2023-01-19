@@ -1,17 +1,18 @@
 import React from "react";
 import "./index.css";
+import Home from "./Components/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ContactMe from "./Components/ContactMe";
+
 function App() {
   return (
-    <div>
-      <h1 className="font-sans text-5xl m-10">My Portfolio</h1>
-      <div className="text-blue-500 border-2 border-dashed grid grid-cols-4 gap-x-1 place-items-center ">
-        <div>LINK 1</div>
-        <div>LINK 2</div>
-        <div>LINK 3</div>
-        <div>LINK 4</div>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/my-portfolio" element={<Home />} />
+        <Route path="/my-portfolio/contact" element={<ContactMe />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
+//TODO - Layout If Required
 export default App;
