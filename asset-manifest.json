@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.3faff7e2.css",
-    "main.js": "/my-portfolio/static/js/main.9cb78ed2.js",
+    "main.css": "/my-portfolio/static/css/main.aeb45af0.css",
+    "main.js": "/my-portfolio/static/js/main.4724eca0.js",
+    "static/media/blue-abstract-gradient-wave-wallpaper.jpg": "/my-portfolio/static/media/blue-abstract-gradient-wave-wallpaper.47920eba4a9992fb67cf.jpg",
     "index.html": "/my-portfolio/index.html",
-    "main.3faff7e2.css.map": "/my-portfolio/static/css/main.3faff7e2.css.map",
-    "main.9cb78ed2.js.map": "/my-portfolio/static/js/main.9cb78ed2.js.map"
+    "main.aeb45af0.css.map": "/my-portfolio/static/css/main.aeb45af0.css.map",
+    "main.4724eca0.js.map": "/my-portfolio/static/js/main.4724eca0.js.map"
   },
   "entrypoints": [
-    "static/css/main.3faff7e2.css",
-    "static/js/main.9cb78ed2.js"
+    "static/css/main.aeb45af0.css",
+    "static/js/main.4724eca0.js"
   ]
 }
