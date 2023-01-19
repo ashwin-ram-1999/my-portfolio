@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./index.css";
 function App() {
   return (
     <div>
@@ -16,6 +16,9 @@ function App() {
         </thead>
       </table>
       <h1>My Portfolio</h1>
+      <button className="bg-red-500">Click me</button>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <button className="bg-red-500 text-white rounded">Click me</button>
     </div>
   );
 }
