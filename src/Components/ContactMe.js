@@ -16,7 +16,7 @@ function ContactMe() {
   const [notifHandler, setNotifhandler] = useState({
     state: false,
     message: "",
-    color: "",
+    error: false,
   });
 
   const form = useRef();
@@ -38,7 +38,7 @@ function ContactMe() {
             ...notifHandler,
             state: true,
             message: "Email Sent Successfully",
-            color: "teal",
+            error: false,
           });
           clearTimeout(timerRef.current);
           timerRef.current = setTimeout(() => {
@@ -51,7 +51,7 @@ function ContactMe() {
             ...notifHandler,
             state: true,
             message: "Email Could Not Be Sent.",
-            color: "red",
+            error: true,
           });
           clearTimeout(timerRef.current);
           timerRef.current = setTimeout(() => {
@@ -69,14 +69,22 @@ function ContactMe() {
         <div className="border-2 border-solid my-4" />
         {notifHandler.state && (
           <div
-            className={`bg-${notifHandler.color}-100 border-t-4 border-${notifHandler.color}-500 rounded-b text-${notifHandler.color}-900 px-4 py-3 shadow-md w-1/4`}
+            className={`${
+              notifHandler.error ? "bg-red-100" : "bg-teal-100"
+            } border-t-4 ${
+              notifHandler.error ? "border-red-500" : "border-teal-500"
+            }  rounded-b ${
+              notifHandler.error ? "text-red-900 " : "text-teal-900"
+            } px-4 py-3 shadow-md w-1/4`}
             role="alert"
             style={{ margin: "15px auto" }}
           >
             <div className="flex justify-center items-center">
               <div className="py-1">
                 <svg
-                  className={`fill-current h-6 w-6 text-${notifHandler.color}-500 mr-4`}
+                  className={`fill-current h-6 w-6 ${
+                    notifHandler.error ? "text-red-500" : "text-teal-500"
+                  } mr-4`}
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                 >
