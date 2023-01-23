@@ -7,7 +7,6 @@ function ContactMe() {
     subject: "",
     body: "",
   });
-  const [darkMode, setDarkMode] = useState(false);
 
   const handleChange = (e, inp) => {
     setEmailData({ ...emailData, [inp]: e.target.value });
@@ -16,20 +15,11 @@ function ContactMe() {
   const sendEmail = () => {
     alert(JSON.stringify(emailData, null, 2));
   };
-  //Toggle for {darkMode ? <div>Light Mode</div> : <div>Dark Mode</div>}
   return (
     <div>
-      <div className="">
-        <input
-          type="checkbox"
-          value={darkMode}
-          onChange={() => {
-            console.log(darkMode);
-            setDarkMode(!darkMode);
-          }}
-        />
+      <div className="flex">
+        <h1 className="font-sans text-5xl m-10">My Socials</h1>
       </div>
-      <h1 className="font-sans text-5xl m-10">My Socials</h1>
       <div className="border-2 border-solid" />
       <div className="flex w-full content-evenly">
         <div

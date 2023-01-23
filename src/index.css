@@ -7,3 +7,8 @@ html {
   background-size: "cover";
   background-repeat: no-repeat;
 }
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #4eabf7;
+}
