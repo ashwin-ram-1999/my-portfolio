@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function ContactMe() {
   const [emailData, setEmailData] = useState({
@@ -29,6 +30,15 @@ function ContactMe() {
           <div className="m-4 text-2xl text-blue-900">Social Media</div>
           <div>LinkedIn</div>
           <div>GitHub</div>
+          <div>
+            <Link
+              to="/files/Resume - Ashwin Sundar Ram.pdf"
+              target="_blank"
+              download
+            >
+              Download My Resume!
+            </Link>
+          </div>
         </div>
         <div
           className="w-3/4 border-2 border-solid m-4"
