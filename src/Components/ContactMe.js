@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
+import { resumeLink } from "../Constants/constants";
 function ContactMe() {
   const [emailData, setEmailData] = useState({
     name: "",
@@ -31,13 +30,9 @@ function ContactMe() {
           <div>LinkedIn</div>
           <div>GitHub</div>
           <div>
-            <Link
-              to="/files/Resume - Ashwin Sundar Ram.pdf"
-              target="_blank"
-              download
-            >
+            <a href={resumeLink} target="_blank" download>
               Download My Resume!
-            </Link>
+            </a>
           </div>
         </div>
         <div
