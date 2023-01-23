@@ -14,5 +14,4 @@ function App() {
     </BrowserRouter>
   );
 }
-//TODO - Layout If Required
 export default App;
