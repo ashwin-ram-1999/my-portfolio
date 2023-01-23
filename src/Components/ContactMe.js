@@ -37,7 +37,7 @@ function ContactMe() {
           setNotifhandler({
             ...notifHandler,
             state: true,
-            message: "Email Sent Successfully",
+            message: "Email Sent Successfully!",
             error: false,
           });
           clearTimeout(timerRef.current);
@@ -92,7 +92,7 @@ function ContactMe() {
                 </svg>
               </div>
               <div>
-                <p className="font-bold">Email Sent Successfully!</p>
+                <p className="font-bold">{notifHandler.message}</p>
               </div>
             </div>
           </div>
