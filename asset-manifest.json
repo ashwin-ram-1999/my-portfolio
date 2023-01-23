@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.5cad0730.css",
-    "main.js": "/my-portfolio/static/js/main.39a4b132.js",
+    "main.css": "/my-portfolio/static/css/main.571c4b90.css",
+    "main.js": "/my-portfolio/static/js/main.5786a0fc.js",
     "static/media/blue-abstract-gradient-wave-wallpaper.jpg": "/my-portfolio/static/media/blue-abstract-gradient-wave-wallpaper.47920eba4a9992fb67cf.jpg",
     "static/media/icons8-github.svg": "/my-portfolio/static/media/icons8-github.69ffe3cb8c54c205c390162209ad7ac1.svg",
     "index.html": "/my-portfolio/index.html",
     "static/media/icons8-linkedin-circled.svg": "/my-portfolio/static/media/icons8-linkedin-circled.7540786b429de16b85d82b7eac259f8f.svg",
-    "main.5cad0730.css.map": "/my-portfolio/static/css/main.5cad0730.css.map",
-    "main.39a4b132.js.map": "/my-portfolio/static/js/main.39a4b132.js.map"
+    "main.571c4b90.css.map": "/my-portfolio/static/css/main.571c4b90.css.map",
+    "main.5786a0fc.js.map": "/my-portfolio/static/js/main.5786a0fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cad0730.css",
-    "static/js/main.39a4b132.js"
+    "static/css/main.571c4b90.css",
+    "static/js/main.5786a0fc.js"
   ]
 }
